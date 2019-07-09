@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="last_session_creation_time <= 1400624768.0\nmse = 0.1\nsamples = 5662\nvalue = 0.1"] ;
+1 [label="last_session_creation_time <= 1400010624.0\nmse = 0.0\nsamples = 4911\nvalue = 0.0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="creation_time <= 5348.5\nmse = 0.0\nsamples = 4821\nvalue = 0.0"] ;
+1 -> 2 ;
+3 [label="mse = 0.0\nsamples = 2309\nvalue = 0.0"] ;
+2 -> 3 ;
+4 [label="mse = 0.0\nsamples = 2512\nvalue = 0.0"] ;
+2 -> 4 ;
+5 [label="creation_time <= 9655.0\nmse = 0.2\nsamples = 90\nvalue = 0.2"] ;
+1 -> 5 ;
+6 [label="mse = 0.0\nsamples = 19\nvalue = 1.0"] ;
+5 -> 6 ;
+7 [label="mse = 0.1\nsamples = 71\nvalue = 0.1"] ;
+5 -> 7 ;
+8 [label="creation_time <= 10166.0\nmse = 0.2\nsamples = 751\nvalue = 0.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="creation_time <= 9392.5\nmse = 0.0\nsamples = 527\nvalue = 1.0"] ;
+8 -> 9 ;
+10 [label="mse = 0.0\nsamples = 491\nvalue = 1.0"] ;
+9 -> 10 ;
+11 [label="mse = 0.2\nsamples = 36\nvalue = 0.6"] ;
+9 -> 11 ;
+12 [label="creation_time <= 11158.5\nmse = 0.1\nsamples = 224\nvalue = 0.1"] ;
+8 -> 12 ;
+13 [label="mse = 0.2\nsamples = 58\nvalue = 0.4"] ;
+12 -> 13 ;
+14 [label="mse = 0.0\nsamples = 166\nvalue = 0.0"] ;
+12 -> 14 ;
+}
